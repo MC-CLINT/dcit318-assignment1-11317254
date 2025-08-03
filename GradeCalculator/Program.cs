@@ -50,8 +50,12 @@ namespace GradeCalculator
             }
             else
             {
-                Console.WriteLine("Please enter a valid number (eg., 75, 83.5");
+                Console.WriteLine("Please enter a valid number (eg., 75, 83.5).");
             }
+
+            Console.WriteLine("Press any key to exit....");
+            Console.ReadKey();
+
         }
     }
 }
