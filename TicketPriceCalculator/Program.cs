@@ -10,31 +10,49 @@ namespace TicketPriceCalculator
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your age: ");
-            string input = Console.ReadLine();
-
-            // Validate input first
-            if (String.IsNullOrWhiteSpace(input))
+            while (true)
             {
-                Console.WriteLine("Age Input cannot be empty.");
+                Console.Write("Enter your age: ");
+                string input = Console.ReadLine();
 
-            }
-
-            else if (int.TryParse(input, out int age))
-            {
-                if (age < 0 || age > 120)
+                if (input.Trim().ToLower() == "exit")
                 {
-                    Console.WriteLine("Please enter your right age).");
+                    Console.WriteLine("Exiting Program. Goodbye");
+                    break;
+                }
+
+                // Validate input first
+                if (String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Age Input cannot be empty.");
+                    continue;
+                }
+
+                if (int.TryParse(input, out int age))
+                {
+                    if (age < 0 || age > 120)
+                    {
+                        Console.WriteLine("Please enter your right age).");
+                    }
+                    else
+                    {
+                        int ticketPrice = (age <= 12 || age >= 65) ? 7 : 10;
+                        Console.WriteLine($"Your ticket price is GHC{ticketPrice}.");
+                    }
                 }
                 else
                 {
-                    int ticketPrice = (age <= 12 || age >= 65) ? 7 : 10;
-                    Console.WriteLine($"Your ticket price is GHC{ticketPrice}.");
+                    Console.WriteLine("Please enter a valid age using a whole number (eg., 25).");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Please enter a valid age using a whole number (eg., 25).");
+
+                Console.WriteLine("Would you like to try another age? (yes/no)");
+                string response = Console.ReadLine().Trim().ToLower();
+
+                if (response != "yes")
+                {
+                    Console.WriteLine("Thanks for using the Ticket Price Calculator. Goodbye!");
+                    break;
+                }
             }
         }
     }

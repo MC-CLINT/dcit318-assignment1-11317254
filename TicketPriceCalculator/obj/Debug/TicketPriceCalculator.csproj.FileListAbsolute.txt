@@ -1,0 +1,7 @@
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\bin\Debug\TicketPriceCalculator.exe.config
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\bin\Debug\TicketPriceCalculator.exe
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\bin\Debug\TicketPriceCalculator.pdb
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\obj\Debug\TicketPriceCalculator.csproj.AssemblyReference.cache
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\obj\Debug\TicketPriceCalculator.csproj.CoreCompileInputs.cache
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\obj\Debug\TicketPriceCalculator.exe
+F:\DCIT 318-ASSIGNMENTS\dcit318-assignment1-11317254\TicketPriceCalculator\obj\Debug\TicketPriceCalculator.pdb
