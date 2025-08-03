@@ -12,6 +12,13 @@ namespace GradeCalculator
         {
             Console.Write("Enter a numerical grade (0-100)");
             string input = Console.ReadLine();
+
+            //Detects for empty or whitespace-only input
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("An input value is required. Enter a numerical value within the range of 0 to 100");
+                return;
+            }
         }
     }
 }
